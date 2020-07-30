@@ -1,21 +1,20 @@
 # Online Ratings for Electronic Gadgets for Commercial Purpose
 
-Online Ratings for Electronic Gadgets for Commercial Purpose by [Muhammad Syamil, Amer Fathullah, Amirul Hakim, Ahmad 'Asim, Muhammad Ariffin](https://github.com/amerfathullah)
+Rating Review Analysis by [Muhammad Syamil, Amer Fathullah, Amirul Hakim, Ahmad 'Asim, Muhammad Ariffin](https://github.com/amerfathullah)
 
 ## Overview
 
-This repository contains code for our data mining project. The dataset is downloaded from Kaggle. The code is developed using [Scikit learn](http://scikit-learn.org/stable/index.html).
-It uses following algorithms: <br>
+This is the code for our data mining group project. [Scikit learn](http://scikit-learn.org/stable/index.html) is used to developed the code.
+Two algorithms are used: <br>
 
 - Multinomial Naive Bayes
 - Support Vector Machine
 
-Also, it has visualisation of data and the knowledge obtained from it.
+The data are visualized using Matplotlib.
 
 ## Dependencies
 
 - python3.8.5
-- virtualenv
 - jupyter notebook
 - pandas
 - numpy
@@ -27,19 +26,11 @@ Also, it has visualisation of data and the knowledge obtained from it.
 
 ## Data
 
-Download the required data from [this](https://www.kaggle.com/PromptCloudHQ/amazon-reviews-unlocked-mobile-phones/data) kaggle page and put it in the same directory.
+Download the data set from [this](https://www.kaggle.com/PromptCloudHQ/amazon-reviews-unlocked-mobile-phones/data) kaggle page and put it in the same directory as Electronic_Rating.ipynb Jupyter Notebook.
 
 ## Installation
 
-You may run this code in a virtual environment. We preferred to do so.<br>
-Assuming that you have installed pip and virtualenv,<br>
-Create a virtualenv and activate it. eg. let's call it `env`
-```
-cd env
-git clone https://github.com/hiteshvaidya/sentiment_analysis.git
-cd sentiment_analysis
-```
-Install the Python libraries required for this project
+1. Install the Python libraries required for this project:
 ```
 pip install pandas
 pip install numpy
@@ -47,18 +38,14 @@ pip install nltk
 pip install matplotlib
 pip install sklearn
 pip install beautifulsoup4
-pip install ipykernel
 pip install lxml
 ```
-
-In order to run jupyter notebook in a virtualenv, you need to create a new kernel. Follow this [blog](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/) or this stackoverflow [page](https://stackoverflow.com/questions/37891550/jupyter-notebook-running-kernel-in-different-env) to create one.
-
+2. The following file must be presented in the same directory before running the Jupyter notebook.
+- Amazon_Unlocked_Mobile.csv
+- Electronic_Rating.ipynb
 
 ## Usage
 
-- Open jupter notebook. Now go in settings and change kernel to the new kernel that you just created.
-- Now run the code in jupyter notebook.
-
-## Acknowledgement
-
-Credits for part of this code to [Suki Lau](https://github.com/sukilau) and [Hitesh Vaidya](https://github.com/hiteshvaidya).
+- Open Jupyter notebook. Go in the settings and make sure the kernel is correct. For this project, we use Python 3.8.5 64-bit kernel but other kernel can be run too in most cases.
+- In the notebook, change the destination of Amazon_Unlocked_Mobile.csv (Cell #2) and the destination of putlabel_dataset.csv (Cell #3) to their appropiate destination.
+- Now run the code in Jupyter Notebook.
